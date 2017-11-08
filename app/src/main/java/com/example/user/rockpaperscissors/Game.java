@@ -99,26 +99,27 @@ public class Game {
         } else if (playerChoice.equals(Symbol.ROCK) && AIchoice.equals(Symbol.SPOCK)) {
             this.aiCounter++;
         } else if (AIchoice.equals(Symbol.ROCK) && playerChoice.equals(Symbol.LIZARD)) {
-            this.userCounter++;
-        } else if (playerChoice.equals(Symbol.ROCK) && AIchoice.equals(Symbol.LIZARD)) {
             this.aiCounter++;
+        } else if (playerChoice.equals(Symbol.ROCK) && AIchoice.equals(Symbol.LIZARD)) {
+            this.userCounter++;
         } else if (playerChoice.equals(Symbol.PAPER) && AIchoice.equals(Symbol.SPOCK)) {
             this.userCounter++;
         } else if (AIchoice.equals(Symbol.PAPER) && playerChoice.equals(Symbol.SPOCK)) {
             this.aiCounter++;
         } else if (playerChoice.equals(Symbol.PAPER) && AIchoice.equals(Symbol.LIZARD)) {
-            this.userCounter++;
-        } else if (AIchoice.equals(Symbol.PAPER) && playerChoice.equals(Symbol.LIZARD)) {
             this.aiCounter++;
+        } else if (AIchoice.equals(Symbol.PAPER) && playerChoice.equals(Symbol.LIZARD)) {
+            this.userCounter++;
         } else if (playerChoice.equals(Symbol.SCISSORS) && AIchoice.equals(Symbol.SPOCK)){
             this.aiCounter++;
         } else if (AIchoice.equals(Symbol.SCISSORS) && playerChoice.equals(Symbol.SPOCK)) {
             this.userCounter++;
         } else if (playerChoice.equals(Symbol.SCISSORS) && AIchoice.equals(Symbol.LIZARD)) {
-            this.aiCounter++;
-        } else if (AIchoice.equals(Symbol.SCISSORS) && playerChoice.equals(Symbol.LIZARD)){
             this.userCounter++;
+        } else if (AIchoice.equals(Symbol.SCISSORS) && playerChoice.equals(Symbol.LIZARD)){
+            this.aiCounter++;
         }
+
         return result;
     }
 
